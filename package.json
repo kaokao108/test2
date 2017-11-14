@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --exec babel-node --presets es2015 server/index.js",
-    "crawler": "babel-node --presets es2015 src/crawlers/vieshow.js"
+    // "crawler": "babel-node --presets es2015 src/crawlers/vieshow.js"
   },
   "author": "Naichin.W",
   "license": "ISC",
