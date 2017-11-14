@@ -1,18 +1,18 @@
-var express = require('express');
-var path = require('path');
-var bodyParser = require('body-parser';
-var mongodb = require('mongodb');
-var mongoose = require('mongoose'); // MongoDB ORM
-var _ = require('lodash');
-var LINEBot = require('line-messaging');
-var cors = require('cors');
-var googleMapsClient = require('@google/maps');
+import express from 'express'
+import path from 'path'
+import bodyParser from 'body-parser'
+import mongodb from 'mongodb'
+import mongoose from 'mongoose' // MongoDB ORM
+import _ from 'lodash'
+import LINEBot from 'line-messaging'
+import cors from 'cors'
+import googleMapsClient from '@google/maps'
 
-var Router = require('./router');
-var Cinemas = require('../src/datas/cinemas');
-var { channelID, channelSecret, channelToken } = require('../config/line-bot');
-var { commandType } = require('../src/textCommand');
-var Showtime = require('../models/showtime');
+import Router from './router'
+import Cinemas from '../src/datas/cinemas'
+import { channelID, channelSecret, channelToken } from '../config/line-bot'
+import { commandType } from '../src/textCommand'
+import Showtime from '../models/showtime'
 
 const googleMapsClient = require('@google/maps').createClient({ key: 'AIzaSyAl7wJfWGWrf9_eNfedFob_qpFMYHDN99M' })
 let app = express()
