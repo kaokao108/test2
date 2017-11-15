@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node --presets es2015 server/index.js",
+    "start": "--exec babel-node --presets es2015 server/index.js",
     "crawler": "babel-node --presets es2015  src/scheduler/index.js"
   },
   "author": "Naichin.W",
