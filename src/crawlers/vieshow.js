@@ -4,6 +4,7 @@ import _ from 'lodash'
 import Promise from 'promise'
 
 export const getShowtimes = (_theaterId) => {
+  var Crawler = require("js-crawler");
   const crawler = new Crawler().configure({ maxRequestsPerSecond: 10 })
   const showtimePromise = new Promise((resolve, reject) => {
     crawler.crawl({
